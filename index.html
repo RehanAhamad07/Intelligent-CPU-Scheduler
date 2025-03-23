@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent CPU Scheduler Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Intelligent CPU Scheduler Simulator</h1>
+        
+        <!-- Input Section -->
+        <div class="input-section">
+            <h2>Enter Process Details</h2>
+            <div id="processInputs">
+                <div class="process">
+                    <label>Process ID: <span class="pid">1</span></label>
+                    <label>Arrival Time: <input type="number" class="arrivalTime" min="0" value="0"></label>
+                    <label>Burst Time: <input type="number" class="burstTime" min="1" value="1"></label>
+                    <label>Priority: <input type="number" class="priority" min="1" value="1"></label>
+                </div>
+            </div>
+            <button onclick="addProcess()">Add Process</button>
+            <button onclick="removeProcess()">Remove Process</button>
+        </div>
+
+        <!-- Algorithm Selection -->
+        <div class="algorithm-section">
+            <h2>Select Scheduling Algorithm</h2>
+            <select id="algorithm">
+                <option value="FCFS">First-Come, First-Served (FCFS)</option>
+                <option value="SJF">Shortest Job First (SJF)</option>
+                <option value="RR">Round Robin (RR)</option>
+                <option value="Priority">Priority Scheduling</option>
+            </select>
+            <label for="timeQuantum">Time Quantum (for Round Robin):</label>
+            <input type="number" id="timeQuantum" min="1" value="2" disabled>
+            <button onclick="startSimulation()">Start Simulation</button>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output-section">
+            <h2>Simulation Results</h2>
+            <div class="gantt-chart">
+                <h3>Gantt Chart</h3>
+                <div id="ganttChart"></div>
+            </div>
+            <div class="metrics">
+                <h3>Performance Metrics</h3>
+                <p>Average Waiting Time: <span id="avgWaitingTime">0</span></p>
+                <p>Average Turnaround Time: <span id="avgTurnaroundTime">0</span></p>
+                <p>Throughput: <span id="throughput">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

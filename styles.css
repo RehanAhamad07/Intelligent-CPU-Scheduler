@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Input Section */
+.input-section, .algorithm-section, .output-section {
+    margin-bottom: 20px;
+}
+
+.process {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+.process label {
+    margin-right: 10px;
+}
+
+.process input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+select {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Gantt Chart Styles */
+#ganttChart {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.gantt-bar {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    min-width: 50px; /* Minimum width for each bar */
+}
+
+.gantt-bar.waiting {
+    background-color: #ffc107; /* Color for waiting time */
+}
+
+.gantt-bar.running {
+    background-color: #28a745; /* Color for running time */
+}
+
+.gantt-bar.completed {
+    background-color: #dc3545; /* Color for completed time */
+}
+
+/* Metrics Section */
+.metrics {
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.metrics h3 {
+    margin-top: 0;
+}
+
+.metrics p {
+    margin: 5px 0;
+}
