@@ -1,7 +1,8 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+    background: linear-gradient(135deg, #1a0056, #3d0d83, #6a1fb8);
+
     margin: 0;
     padding: 0;
 }
@@ -9,13 +10,20 @@ body {
 .container {
     width: 80%;
     margin: 20px auto;
-    background: #fff;
+    background: 	#7d0185;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #020111, #191970, #001F3F);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+
 }
 
+
 h1, h2, h3 {
-    color: #333;
+    color: white;
+
 }
 
 /* Input Section */
@@ -26,7 +34,10 @@ h1, h2, h3 {
 .process {
     margin-bottom: 10px;
     padding: 10px;
-    background: #e9ecef;
+    background: radial-gradient(circle at center, #ff00ff, #800080, #000000);
+    background-size: cover;
+    color: white; 
+    /* color: white; */
     border-radius: 5px;
 }
 
@@ -57,7 +68,7 @@ select {
     margin-right: 10px;
 }
 
-/* Gantt Chart Styles */
+
 #ganttChart {
     display: flex;
     align-items: center;
@@ -83,18 +94,24 @@ select {
 }
 
 .gantt-bar.running {
-    background-color: #28a745; /* Color for running time */
+    background-color: #1b6f93; /* Color for running time */
 }
 
 .gantt-bar.completed {
     background-color: #dc3545; /* Color for completed time */
 }
 
-/* Metrics Section */
+
 .metrics {
-    background: #e9ecef;
+    margin-bottom: 10px;
     padding: 10px;
+    background: radial-gradient(circle at center, #ff00ff, #800080, #000000);
+    background-size: cover;
+    color: white; 
+    /* color: white; */
     border-radius: 5px;
+    /* padding: 10px; */
+    /* border-radius: 5px; */
     margin-top: 20px;
 }
 
